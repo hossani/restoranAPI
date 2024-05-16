@@ -37,7 +37,7 @@ const transporter = await nodemailer.createTransport({
 });
 const mailOptions = {
     from:  process.env.user,
-    to: myemail,
+    to: process.env.myemail,
     subject: subject,
     text: "Name:"+name+"\n"+"Email:"+email+"\n"+"Message:"+message
 };

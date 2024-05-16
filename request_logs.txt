@@ -21,3 +21,17 @@ Method: GET, URL: /img/favicon.ico ,IP: undefined,User Agent: Mozilla/5.0 (Windo
 Method: GET, URL: /about ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
 Method: GET, URL: /contact ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
 Method: GET, URL: /img/favicon.ico ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: GET, URL: /contact ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: GET, URL: /about ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: GET, URL: /home ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: POST, URL: /home ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: GET, URL: /home ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: GET, URL: /contact ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: POST, URL: /contact ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: GET, URL: /contact ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: GET, URL: /contact ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: POST, URL: /contact ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: GET, URL: /contact ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: GET, URL: /addMeal ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: POST, URL: /addMeal?_csrf=fAiPP1uD-ns5RwKNJS0lOANPoCcYX6Le9B6o ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Method: GET, URL: /home ,IP: ::ffff:127.0.0.1,User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
