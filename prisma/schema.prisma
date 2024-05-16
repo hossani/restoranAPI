@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model categorie {
+  id_cat Int     @id @default(autoincrement())
+  nom    String  @unique(map: "nom") @db.VarChar(255)
+  repas  repas[]
+}
+
+model client {
+  id_clt     Int        @id @default(autoincrement())
+  email      String     @unique(map: "email") @db.VarChar(255)
+  id_rest    Int
+  restaurant restaurant @relation(fields: [id_rest], references: [id_rest], onUpdate: Restrict, map: "client_ibfk_1")
+
+  @@index([id_rest], map: "id_rest")
+}
+
+model employee {
+  id_emp      Int        @id @default(autoincrement())
+  nom_complet String     @db.VarChar(255)
+  poste       String     @db.VarChar(255)
+  image       String     @unique(map: "image") @db.VarChar(255)
+  id_rest     Int
+  restaurant  restaurant @relation(fields: [id_rest], references: [id_rest], onUpdate: Restrict, map: "employee_ibfk_1")
+
+  @@index([id_rest], map: "id_rest")
+}
+
+model repas {
+  id_rep      Int        @id @default(autoincrement())
+  nom         String     @unique(map: "nom") @db.VarChar(255)
+  description String     @db.Text
+  prix        Float      @db.Float
+  image       String     @db.VarChar(255)
+  id_rest     Int
+  id_cat      Int
+  restaurant  restaurant @relation(fields: [id_rest], references: [id_rest], onUpdate: Restrict, map: "repas_ibfk_1")
+  categorie   categorie  @relation(fields: [id_cat], references: [id_cat], onUpdate: Restrict, map: "repas_ibfk_2")
+
+  @@index([id_cat], map: "id_cat")
+  @@index([id_rest], map: "id_rest")
+}
+
+model restaurant {
+  id_rest           Int        @id @default(autoincrement())
+  nom               String     @db.VarChar(255)
+  adresse           String     @unique(map: "adresse") @db.VarChar(255)
+  telephone         String     @unique(map: "telephone") @db.VarChar(20)
+  email             String     @unique(map: "email") @db.VarChar(255)
+  openingTimeInWeek String     @db.VarChar(100)
+  openingTimeSunday String     @db.VarChar(100)
+  siteWeb           String     @db.VarChar(255)
+  client            client[]
+  employee          employee[]
+  repas             repas[]
+}
