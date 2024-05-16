@@ -31,13 +31,13 @@ const transporter = await nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'apprenant.apprenant4@talents4starups.com',
+        user:  process.env.user,
         pass: process.env.pass
     }
 });
 const mailOptions = {
-    from: 'apprenant.apprenant4@talents4starups.com',
-    to: 'hamza.hossani.001@gmail.com',
+    from:  process.env.user,
+    to: myemail,
     subject: subject,
     text: "Name:"+name+"\n"+"Email:"+email+"\n"+"Message:"+message
 };

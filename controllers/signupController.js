@@ -29,12 +29,12 @@ if (error) return res.status(400).send(error.message);
         port: 465,
         secure: true,
         auth: {
-            user: 'apprenant.apprenant4@talents4starups.com',
+            user: process.env.user,
             pass: process.env.pass
         }
     });
     const mailOptions = {
-        from: 'apprenant.apprenant4@talents4starups.com',
+        from:  process.env.user,
         to: email,
         subject: 'Mail de remerciement',
         text: 'Merci pour votre abonnement dans notre site restaurant'
